@@ -277,7 +277,7 @@
 </script>
 
 <style lang="scss">
-  @import "../../../assets/css/global";
+  @import "../../../assets/css/variables";
 
 .vdatetime-fade-enter-active,
 .vdatetime-fade-leave-active {
