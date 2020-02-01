@@ -392,7 +392,7 @@
   .material-input:focus ~ .material-label,
   .material-input:-webkit-autofill ~ .material-label,
   .active ~ .material-label {
-    transform: translateY(-1.28125em) scale(.875) perspective(100px) translateZ(.001px);
+    transform: translateY(-1.04em) scale(.875) perspective(100px) translateZ(.001px);
     width: 133.33%;
     color: var(--primary-color, #1e81f0);
   }
