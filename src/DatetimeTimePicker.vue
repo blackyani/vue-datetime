@@ -138,7 +138,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .vdatetime-time-picker {
   box-sizing: border-box;
 

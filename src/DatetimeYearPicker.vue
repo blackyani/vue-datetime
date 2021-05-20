@@ -64,7 +64,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .vdatetime-year-picker {
   box-sizing: border-box;
 

@@ -102,7 +102,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .vdatetime-calendar__navigation,
 .vdatetime-calendar__navigation * {
   box-sizing: border-box;

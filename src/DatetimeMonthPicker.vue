@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .vdatetime-month-picker {
   box-sizing: border-box;
 

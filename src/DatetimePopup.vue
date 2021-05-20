@@ -270,7 +270,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .vdatetime-popup {
   box-sizing: border-box;
   z-index: 1000;
