@@ -3,7 +3,7 @@
     <slot name="before"></slot>
     <div class="input-control">
       <input class="vdatetime-input material-input"
-             :class="[(value || value===0)?'active':'', isValid?'':'no-validate', wideText ? 'wide-text' : '']"
+             :class="[(value || value===0)?'active':'', invalid?'no-validate':'', wideText ? 'wide-text' : '']"
              :style="inputStyle"
              :id="inputId"
              type="text"
@@ -19,7 +19,7 @@
         </span>
       </label>
       <span class="bar"></span>
-      <div class="input-error" :class="isValid?'':'error'">{{validMsg}}</div>
+      <div class="input-error" :class="invalid?'error':''">{{validMsg}}</div>
     </div>
     <input v-if="hiddenName" type="hidden" :name="hiddenName" :value="value" @input="setValue">
     <slot name="after"></slot>
@@ -184,6 +184,9 @@
     },
 
     computed: {
+      invalid() {
+        return !this.isValid || !!this.validMsg;
+      },
       inputValue() {
         let {format} = this;
 
